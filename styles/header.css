@@ -1,9 +1,16 @@
 .header {
   height: 55px;
-
+background-color: white;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: lightgray;
 }
 
 .left-section{
@@ -13,16 +20,20 @@ justify-content: space-between;
 
 .middle-section{
   flex: 1;
-  margin-left: 70px;
-  max-width: 300px;
+  margin-left: 20px;
+ max-width: 600px;
   display: flex;
   align-items: center;
 }
 
 .right-section{
   margin-left: 30px;
-  background-color: lightblue;
-  width: 200px;
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .hamburger-menu{
@@ -37,7 +48,7 @@ justify-content: space-between;
 
 .search-button{
   height: 44px;
-  width: 150px;
+  width: 66px;
   font-size: 16px;
   border-width: 1px;
   border-style: solid;
@@ -58,7 +69,6 @@ justify-content: space-between;
   border-radius: 20px;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   background-color: white;
-
 }
 
 .search-bar{
@@ -71,6 +81,8 @@ justify-content: space-between;
   border-color: rgba(107, 97, 97, 0.721);
   border-radius: 2px;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  max-width: 350px;
+  width: 0;
 }
 
 .search-bar::placeholder{
@@ -86,5 +98,20 @@ justify-content: space-between;
 .voice-search-icon{
   height: 25px;
   margin-top: 4px;
+}
+
+.upload-icon{
+  height: 25px;
+}
+
+.yt-apps-icon{
+  height: 25px;
+}
+.notifs-icon{
+  height: 25px;
+}
+.current-user-pictures{
+  height: 32px;
+  border-radius: 16px;
 }
 
