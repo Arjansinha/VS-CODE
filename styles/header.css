@@ -11,6 +11,7 @@ right: 0;
 border-bottom-width: 1px;
 border-bottom-style: solid;
 border-bottom-color: lightgray;
+z-index: 100;
 }
 
 .left-section{
@@ -113,5 +114,26 @@ border-bottom-color: lightgray;
 .current-user-pictures{
   height: 32px;
   border-radius: 16px;
+}
+
+.notifs-icon-container{
+  position: relative;
+}
+
+.notifs-count{
+  position: absolute;
+  top: -2px;
+  right: 0;
+  background-color: red;
+  color: white;
+  height: 12px;
+  font-size: 11px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-right: 4px;
+  border-radius: 12px;
+  font-family: Roboto,Arial;
+
 }
 
