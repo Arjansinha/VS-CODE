@@ -17,6 +17,7 @@ z-index: 100;
 .left-section{
   display: flex;
   align-items: center;
+  
 }
 
 .middle-section{
@@ -58,8 +59,8 @@ z-index: 100;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   background-color: white;
   margin-left: -1px;
-  cursor: pointer;
   margin-right: 10px;
+  position: relative;
 }
 
 .voice-search-button{
@@ -70,6 +71,7 @@ z-index: 100;
   border-radius: 20px;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   background-color: white;
+  position: relative;
 }
 
 .search-bar{
@@ -93,12 +95,12 @@ z-index: 100;
 
 .search-icon{
   height: 25px;
-  margin-top: 4px;
+  
 }
 
 .voice-search-icon{
   height: 25px;
-  margin-top: 4px;
+  
 }
 
 .upload-icon{
@@ -137,3 +139,33 @@ z-index: 100;
 
 }
 
+
+.voice-search-button .tooltip,
+.search-button .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.voice-search-button:hover .tooltip,
+.search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip{
+  opacity: 1;
+}
+
+.search-button,.voice-search-button,.upload-icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

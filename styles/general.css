@@ -8,5 +8,7 @@ body {
   margin: 0;
   padding-top: 80px;
   height: 3000px;
-  margin-left: 72px;
+  padding-left: 96px;
+  padding-right:  24px;
+  background-color: rgba(249, 240, 240, 0.893);
 }
