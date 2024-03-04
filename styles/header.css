@@ -141,7 +141,8 @@ z-index: 100;
 
 
 .voice-search-button .tooltip,
-.search-button .tooltip{
+.search-button .tooltip,
+.upload-icon-container .tooltip{
   position: absolute;
   background-color: gray;
   color: white;
